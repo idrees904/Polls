@@ -49,7 +49,7 @@ class QuestionViewSet(viewsets.ModelViewSet):
 
 class AnswerOptionViewSet(viewsets.ModelViewSet):
     '''
-    Варианты ответов(без филтрации).
+    Варианты ответов(без фильтрации).
     Добавить варианты ответов для вопросов(только Админ(ы)). 
     '''
     queryset = AnswerOption.objects.all().order_by('-id')
@@ -63,7 +63,7 @@ class AnswerOptionViewSet(viewsets.ModelViewSet):
 
 class AnswerViewSet(viewsets.ModelViewSet):
     '''
-    Ответы(без филтрации).
+    Ответы(без фильтрации).
     '''
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
